@@ -4286,10 +4286,6 @@ grid-template-columns:0px [life-support-start sensors-start weapons-start weapon
     text-transform: uppercase;
 }
 
-.sheet-skill-row {
-    grid-template-columns: 93px 25px 10px 29px 15px 40px 0 30px 2px 25px;
-}
-
 .sheet-ability-row {
     grid-template-columns: 80px 40px 10px 40px 10px 40px 10px 40px;
 }
@@ -4298,10 +4294,11 @@ grid-template-columns:0px [life-support-start sensors-start weapons-start weapon
     grid-column: 2/5;
 }
 
-.sheet-skill-row,
 .sheet-ability-row{
     align-items: center;
     display: grid;
+    justify-content:space-around;
+    justify-items:center;
 }
 
 .sheet-skill-row>span,
@@ -4343,10 +4340,20 @@ grid-template-columns:0px [life-support-start sensors-start weapons-start weapon
     grid-template-columns: 80px 22px 8px 22px 8px 22px 8px 22px;
 }
 
-.sheet-gridrow .sheet-skill {
-    grid-template-columns: 100px 10px 6px 22px 6px 25px 6px 10px 6px 6px;
+.sheet-gridrow .sheet-skill,
+.sheet-skill-row {
+    grid-template-columns: 100px 24px 10px 22px 10px 31px 10px 23px 10px 28px;
 }
-
+.sheet-skill-row,
+.sheet-gridrow > .sheet-skill{
+    justify-items:center;
+}
+.sheet-gridrow > .sheet-skill > .sheet-name{
+    justify-self:left;
+}
+.sheet-gridrow > .sheet-skill > input.sheet-name{
+    justify-self:stretch;
+}
 .sheet-choice-showing .sheet-spell {
     grid-template-columns: calc(100% - 50px) 10px 10px;
 }
@@ -4371,6 +4378,7 @@ grid-template-columns:0px [life-support-start sensors-start weapons-start weapon
 }
 
 .sheet-gridrow .sheet-skill,
+.sheet-skill-row,
 .sheet-gridrow .sheet-ability-scores,
 .sheet-choice-showing .sheet-spell {
     align-content: baseline;
