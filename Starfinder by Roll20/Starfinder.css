@@ -4286,19 +4286,12 @@ grid-template-columns:0px [life-support-start sensors-start weapons-start weapon
     text-transform: uppercase;
 }
 
-.sheet-ability-row {
-    grid-template-columns: 80px 40px 10px 40px 10px 40px 10px 40px;
+.sheet-ability-row,
+.sheet-gridrow .sheet-ability-scores {
+    grid-template-columns: 80px 30px 10px 30px 10px 30px 10px 30px;
 }
-
 .sheet-ability-row>.sheet-base-value.sheet-roll {
     grid-column: 2/5;
-}
-
-.sheet-ability-row{
-    align-items: center;
-    display: grid;
-    justify-content:space-around;
-    justify-items:center;
 }
 
 .sheet-skill-row>span,
@@ -4313,7 +4306,6 @@ grid-template-columns:0px [life-support-start sensors-start weapons-start weapon
     text-transform: uppercase;
 }
 
-.sheet-skill-row>.sheet-ability-name,
 .sheet-ability-row>.sheet-ability-name {
     display: block;
     margin: unset;
@@ -4333,11 +4325,7 @@ grid-template-columns:0px [life-support-start sensors-start weapons-start weapon
 }
 
 .sheet-gridrow input[type=number] {
-    width: 22px;
-}
-
-.sheet-gridrow .sheet-ability-scores {
-    grid-template-columns: 80px 22px 8px 22px 8px 22px 8px 22px;
+    width: 100%;
 }
 
 .sheet-gridrow .sheet-skill,
@@ -4378,7 +4366,8 @@ grid-template-columns:0px [life-support-start sensors-start weapons-start weapon
 }
 
 .sheet-gridrow .sheet-skill,
-.sheet-skill-row,
+.sheet-slide-container .sheet-ability-row,
+.sheet-slide-container .sheet-skill-row,
 .sheet-gridrow .sheet-ability-scores,
 .sheet-choice-showing .sheet-spell {
     align-content: baseline;
