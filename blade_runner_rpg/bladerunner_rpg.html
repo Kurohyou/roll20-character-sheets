@@ -2045,7 +2045,6 @@ const getSkillDice = (skillName,attributes) => {
  * @param {object} casc - Expanded cascade object
  */
 const rollAttribute = function({trigger,attributes,sections,casc}){
-  debugger;
   const rollName = trigger.name.replace(/-action/,'').replace(/-/g,' ');
 
   const rollObj = {
@@ -2120,7 +2119,6 @@ const executeRoll = async (rollObj,attributes,templateStart) => {
   }
 
   finishRoll(roll.rollId,computedObj);
-  debugger;
 };
 
 /**
@@ -2134,7 +2132,6 @@ const pushRoll = async function({trigger,attributes,sections,casc}){
   if(!trigger.originalRollId) return;
   try{
     const rollData = RE.unescape(trigger.originalRollId);
-    debugger;
     rollData.roll1 = rollData.original1 || rollData.roll1;
     rollData.roll2 = rollData.original2 || rollData.roll2;
     rollData.roll3 = rollData.original3 || rollData.roll3;
@@ -2508,7 +2505,6 @@ const handleCompendiumDrop = function({attributes,sections,casc}){
     attributes,sections,casc,
     callback: async (lookupObj)=>{
       if(data.Category === 'NPCs'){
-        debugger;
         clearSheet(attributes,sections,casc);
         attributes.queue.push('character_name');
         attributes.character_name = data['data-cs-name'];
