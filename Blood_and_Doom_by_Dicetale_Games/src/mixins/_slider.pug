@@ -1,0 +1,11 @@
+mixin slider(name, {length,currLength}, attrPrefix, size, align, elementClass)
+    div&attributes({class: align ?? 'center'}).inline&attributes(attributes)
+        block
+        .slider.nowrap
+            // This first input is "checkbox", but hidden by CSS
+            // It lets you uncheck the whole slider by being "checked" at 0
+            // CSS magic requires that the empty boxes come after the checked box
+            - for(let i = 1; i <= length; i++)
+                input(type="checkbox" hidden name=`attr_${attrPrefix ? `${attrPrefix}_` : ''}${name.toLowerCase()}_max` value=i checked=i === currLength ? true : false).grey-control
+                input(type="checkbox" name=`attr_${attrPrefix ? `${attrPrefix}_` : ''}${name.toLowerCase()}` value=i)&attributes({class: `checkbox-${size ?? 'normal'} ${elementClass ? elementClass(i) : ''}`}).display-box.active-box
+                input(type="checkbox" tabindex=-1 name=`attr_${attrPrefix ? `${attrPrefix}_` : ''}${name.toLowerCase()}` value=i)&attributes({class: `checkbox-${size ?? 'normal'} ${elementClass ? elementClass(i) : ''}`}).display-box.disable-box

@@ -1,0 +1,8 @@
+mixin number-input-arrows(name, increment)
+    span.number-input-arrows
+        span(style="white-space: normal")
+            button(class=`${name} number-arrow-up increment${increment || ''}`)
+            br
+            button(class=`${name} number-arrow-down decrement${increment || ''}`)
+        span
+            input(type='number' name=`attr_${name}`)&attributes(attributes)

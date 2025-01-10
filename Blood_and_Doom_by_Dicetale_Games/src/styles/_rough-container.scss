@@ -1,0 +1,36 @@
+@mixin style{
+  .rough-container{
+    .rough-header{
+      flex: 1 1 auto;
+      background: {
+        image: url(https://files.d20.io/images/421780022/P6gkMMnW6WmofmvDW9fUiA/original.png?173472974755);
+        size: 100% 100%;
+        repeat: no-repeat;
+        position: center;
+      };
+      padding: 30px 10px 10px;
+    }
+    .rough-input-container{
+      display: grid;
+      grid-template-areas: 'content';
+      background: {
+        image: url(https://files.d20.io/images/421780023/okOQh9DqCRfE68Z4-kzq-A/original.png);
+        size: 100% 100%;
+        repeat: no-repeat;
+        position: center;
+      };
+      > *{
+        grid-area: content;
+      }
+      .rough-input{
+        background-color: transparent;
+        border-color: transparent;
+        border-width: 0;
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+// 
+// 

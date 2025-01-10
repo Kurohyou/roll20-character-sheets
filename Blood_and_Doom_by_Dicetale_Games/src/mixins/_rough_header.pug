@@ -1,0 +1,11 @@
+//- @pugdoc
+  name: roughHeader 
+  description: creates the rough header used in ability scores
+  arguments:
+    - {string} name - the name of the attribute to create, also used as the i18n key
+    - {number} [level = 3] - what header level to use
+mixin roughHeader(name,level = 3)
+  .rough-container.flex-box&attributes(attributes)
+    #{`h${level}`}(data-i18n=name).rough-header
+    .rough-input-container
+      input(type='number' name=attrName(name)).rough-input

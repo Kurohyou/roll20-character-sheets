@@ -66,18 +66,20 @@
                     div(style="text-align: right;")
                         +textaction('recover')
                 div
-                    +slider('bruises_x1', 8, null, 'large', undefined, ((i) => i >= 6 ? 'toughness-4' : '')).x1
-                    br
-                    +slider('bruises_x2', 5, null, 'large', undefined, ((i) => i >= 4 ? 'toughness-5' : '')).x2
+
+                    +slider('bruises', {length:3,currLength:2}, null, 'large', undefined)
+            .scrapes
+                h3(data-i18n='scrapes')
+                .inline
+                    .column
+                        +slider('scrapes', {length:3,currLength:2}, null, 'large', undefined)
             .wounds
                 h3(data-i18n="WOUNDS").center WOUNDS
                 .inline
                     .column
-                        +slider('wounds_x3', 4, null, 'large').x3
-                        p.center Injury
+                        +slider('wounds', {length:3,currLength:1}, null, 'large').x3
                     .column
-                        +slider('wounds_x6', 2, null, 'large').x6
-                        p.center Injury
+                        +slider('injuries', {length:3,currLength:1}, null, 'large').x6
             .inline
                 .column
                     +danger('bleed', true).medium
@@ -87,8 +89,7 @@
                     +danger('withered', true).medium
             .madness
                 h3(data-i18n="MADNESS").center MADNESS
-                +slider('madness_x1', 8, null, 'large', undefined, ((i) => i >= 7 ? 'insight-5' : i >= 6 ? 'insight-4' : '')).x1
-                p.center Trauma
+                +slider('madness_x1', {length:10,currLength:6}, null, 'large')
     +griditem('damage').tile.damage.general
         .column
             h3(data-i18n='DAMAGE').center.uppercase
@@ -176,55 +177,8 @@
         each skill in skills
             +skill(skill)
     // ABILITIES
-    +griditem('abilities').tile.abilities
-        .inline.center
-            div
-                +textaction('doom_roll', 'DOOM_ROLL')
-            div
-                //+textaction('roll_action_dice').large.nowrap
-                h4(data-i18n='ACTION_DICE').nowrap.mezzolarge.uppercase
-                //+inline-radio('ability_action_dice', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 1, undefined, []).midlarge
-            div.doom-rolls
-                +textaction('roll_doom_reroll', 'reroll')
-                +textaction('roll_doom_roll5', 'roll_5')
-        .ability-roll.inline.space-around
-            - for (let i = 1; i < 13; i++)
-                +textaction('roll_action_dice', i.toString())(value=i).mezzolarge.bold
-        br
-        .inline.center
-            div
-                h4(data-i18n='DIFFICULTY').uppercase DIFFICULTY
-                .inline.center.inline-radio.difficulty
-                    each label, index in ['EASY', 'NORMAL', 'HARD', 'EXTREME', 'NIGHTMARE']
-                        label
-                            input(name='attr_ability_difficulty', type='radio', value=index + 1, checked=(index === 1))
-                            span
-                                h5(data-i18n=label).uppercase.center
-                                h5.center.midlarge=index+1
-                    //+inline-radio('ability_difficulty', [1, 2, 3, 4, 5, 6], 2, ['EASY', 'NORMAL', 'HARD', 'EXTREME', 'NIGHTMARE'], []).uppercase.small
-        h2.strike
-            span(data-i18n="ABILITIES") ABILITIES
-        .ability-scores
-            .inline
-                +ability('strength') STRENGTH
-                +ability('intellect') INTELLECT
-                +ability('heart') HEART
-            .inline
-                +ability('dexterity') DEXTERITY
-                +ability('wisdom') WISDOM
-                +ability('mystique') MYSTIQUE
-            .inline
-                +ability('toughness') TOUGHNESS
-                +ability('lore') LORE
-                +ability('courage') COURAGE
-            .inline
-                +ability('reflex') REFLEX
-                +ability('awareness') AWARENESS
-                +ability('insight') INSIGHT
-            .inline
-                +ability('stealth') STEALTH
-                +ability('focus') FOCUS
-                +ability('willpower') WILLPOWER
+    +ability-skill-panel
+    
     // ADV SKILLS
     +griditem('advskills').tile.advskills
         h2(data-i18n='ADVENTURING_SKILLS').nowrap.mezzolarge ADVENTURING SKILLS

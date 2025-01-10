@@ -1,0 +1,16 @@
+mixin damageroll(name, dice)
+    button(type="roll" value=`&{template:damage}
+        {{title=DAMAGE ROLL}}
+        {{dice=@{damage_dice}${name}+@{damage_mods_enable}}}
+        {{charname=@{character_name}}}
+        {{damage=[[@{damage_dice}${dice}+@{damage_mods_enable}[Mods]]]}}
+    `.replaceAll(' ', '').replaceAll('\n', ' ')).inline-roll.damage-roll
+        h4(data-i18n=`${name.toUpperCase()}`).menolarge
+
+mixin extradamageroll(name, dice)
+    button(type="roll" value=`&{template:damage}
+        {{title=DAMAGE ROLL}}
+        {{charname=@{character_name}}}
+        {{damage=[[${dice}]] EXTRA }}
+    `.replaceAll('\n', '')).inline-roll.damage-roll
+        h4(data-i18n=`${name.toUpperCase()}`)

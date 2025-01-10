@@ -1,0 +1,10 @@
+mixin inline-radio(name, values, defaultValue, labels, infixes)
+    .inline-radio.center.nowrap
+        - for(let i = 0; i < values.length; i++)
+            label&attributes(attributes)
+                input(type="radio", name=`attr_${name}`, value=values[i], checked=(values[i] === defaultValue) )
+                - if (labels)
+                    span(data-i18n=labels[i])
+                - else
+                    span=values[i]
+            span.infix= infixes[i]

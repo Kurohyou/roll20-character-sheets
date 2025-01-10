@@ -1,0 +1,9 @@
+mixin textcheckbox(name, label, value)
+    .text-checkbox.nowrap
+        label
+            input(type="checkbox", name=`attr_${name}`, value=value)
+            - if (label)
+                span(data-i18n=label)
+            - else
+                span
+                    block

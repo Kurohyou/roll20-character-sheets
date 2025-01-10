@@ -1,0 +1,9 @@
+mixin griditem(name)
+    //- Creates a grid item with the grid area name from `name`
+        Passes block
+        Parameters
+            name: grid area name
+        Attributes
+            Passed to the containing div
+    .griditem(style=`grid-area: ${name};`)&attributes(attributes)
+        block

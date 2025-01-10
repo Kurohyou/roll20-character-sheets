@@ -1,0 +1,14 @@
+mixin skill(name)
+    +slider(name, 5, 'skill', 'normal', 'justify')
+        div
+            h4(data-i18n=`${name.toUpperCase()}`).left.capitalize.unbold
+
+mixin custom-skill(i)
+    .justify.inline.fillable
+        +text-input-inline(`skill_custom_${i}_name`, 'skill')(placeholder=" ").noline.placeholder-line
+        +slider(`custom_${i}`, 5, 'skill', 'normal', 'justify').left
+
+mixin advSkill(i)
+    +text-input-inline(`advskill_${i}_name`, 'advskill')(placeholder=" ").noline.placeholder-line
+    //textarea(name=`attr_advskill_${i}_name`, id=`advskill_${i}_name`, placeholder='SKILL NAME').noline
+    +slider(`advskill_${i}_value`, 5, 'skill', 'normal', 'left')

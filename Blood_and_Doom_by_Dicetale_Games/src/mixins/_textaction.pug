@@ -1,0 +1,6 @@
+mixin textaction(name, label, tag)
+    button(type="action", name=`act_${name}`).inline-roll&attributes(attributes)
+        - if (tag === 'h4')
+            h4(data-i18n=`${(label || name).toUpperCase()}`).uppercase
+        - else
+            span(data-i18n=`${(label || name).toUpperCase()}`).uppercase

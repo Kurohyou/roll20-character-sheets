@@ -1,0 +1,12 @@
+@mixin style{
+  .flex-box{
+    display: flex;
+  }
+  .justify-{
+    @each $just in space-between,center,space-around,space-evenly,end{
+      &#{$just}{
+        justify-content: $just;
+      }
+    }
+  }
+}

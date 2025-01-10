@@ -1,0 +1,9 @@
+mixin danger(name, stack)
+    .text-buttons
+        .inline
+            .column
+                input(type="checkbox" name=`attr_condition_${name}` id=`condition_${name}`)
+                label(for=`condition_${name}` data-i18n=name.toUpperCase())&attributes(attributes)
+            .column
+                if (stack)
+                    input(name=`condition_${name}_val`, type="number", value="0").noline&attributes(attributes)

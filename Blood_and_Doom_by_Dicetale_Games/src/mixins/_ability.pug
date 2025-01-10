@@ -1,0 +1,14 @@
+mixin ability(name)
+    - classes = attributes.class;
+    - delete attributes.class;
+    .center.dice-dropdown&attributes(attributes)
+        h4(data-i18n=`${name.toUpperCase()}`).uppercase
+        span(class=classes)
+            input(name=`attr_${name}`, value="0", type="number")
+        //
+            span.selectspan
+            select(name=`attr_ability_${name}`)
+                option(value="d4") d4
+                option(value="d6") d6
+                option(value="d8") d8
+                option(value="d10") d10

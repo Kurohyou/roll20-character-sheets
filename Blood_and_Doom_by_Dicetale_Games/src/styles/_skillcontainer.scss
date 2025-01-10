@@ -1,0 +1,13 @@
+@mixin style{
+  .skill-container{
+    column-width: 200px;
+    column-gap: 20px;
+    column-rule: 2px;
+    column-rule-color: black;
+  }
+  .skill-block{
+    margin-bottom: 5px;
+    display: grid;
+    gap: 2.5px;
+  }
+}

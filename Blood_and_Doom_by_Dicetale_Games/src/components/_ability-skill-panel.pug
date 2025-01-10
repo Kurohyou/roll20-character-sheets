@@ -1,0 +1,38 @@
+mixin ability-skill-panel
+    +griditem('abilities').tile.abilities
+        .inline.center
+            div
+                +textaction('doom_roll', 'DOOM_ROLL')
+            div
+                //+textaction('roll_action_dice').large.nowrap
+                h4(data-i18n='ACTION_DICE').nowrap.mezzolarge.uppercase
+                //+inline-radio('ability_action_dice', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 1, undefined, []).midlarge
+            div.doom-rolls
+                +textaction('roll_doom_reroll', 'reroll')
+                +textaction('roll_doom_roll5', 'roll_5')
+        .ability-roll.inline.space-around
+            - for (let i = 1; i < 13; i++)
+                +textaction('roll_action_dice', i.toString())(value=i).mezzolarge.bold
+        br
+        .inline.center
+            div
+                h4(data-i18n='DIFFICULTY').uppercase DIFFICULTY
+                .inline.center.inline-radio.difficulty
+                    each label, index in ['EASY', 'NORMAL', 'HARD', 'EXTREME', 'NIGHTMARE']
+                        label
+                            input(name='attr_ability_difficulty' type='radio', value=index + 1, checked=(index === 1))
+                            span
+                                h5(data-i18n=label).uppercase.center
+                                h5.center.midlarge=index+1
+                    //+inline-radio('ability_difficulty', [1, 2, 3, 4, 5, 6], 2, ['EASY', 'NORMAL', 'HARD', 'EXTREME', 'NIGHTMARE'], []).uppercase.small
+        h2.strike
+            span(data-i18n="ABILITIES") ABILITIES
+        
+        .skill-container
+            each skillList,ability in spine.abilities
+                .skill-block
+                    +roughHeader(ability)
+                    each skill in skillList
+                        .flex-box.justify-space-between
+                            h4(data-i18n=skill)
+                            input(type="number" name=attrName(skill)).underline

@@ -1,0 +1,11 @@
+mixin save(name)
+    .center.dice-dropdown.inline.save
+        h4(data-i18n=`${name.toUpperCase()}`)
+            block
+        span.selectspan
+            select(name=`attr_save_${name}`)
+                option(value="" data-i18n="NONE") None
+                option(value="d4") d4
+                option(value="d6") d6
+                option(value="d8") d8
+                option(value="d10") d10

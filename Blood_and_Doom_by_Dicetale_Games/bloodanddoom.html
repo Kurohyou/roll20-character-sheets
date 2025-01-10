@@ -210,13 +210,6 @@
                   <!-- This first input is "checkbox", but hidden by CSS-->
                   <!-- It lets you uncheck the whole slider by being "checked" at 0-->
                   <!-- CSS magic requires that the empty boxes come after the checked box-->
-                  <input class="checkbox-midlarge" type="checkbox" name="attr_armor_dented" value="0" checked="checked"/>
-                  <input class="checkbox-midlarge " type="checkbox" name="attr_armor_dented" value="1"/>
-                  <input class="checkbox-midlarge dented-2 hidden" type="checkbox" name="attr_armor_dented" value="2"/>
-                  <input class="checkbox-midlarge dented-2 dented-3 hidden" type="checkbox" name="attr_armor_dented" value="3"/>
-                  <input class="checkbox-midlarge dented-2 dented-3 dented-4 hidden" type="checkbox" name="attr_armor_dented" value="4"/>
-                  <input class="checkbox-midlarge dented-2 dented-3 dented-4 dented-5 hidden" type="checkbox" name="attr_armor_dented" value="5"/>
-                  <input class="checkbox-midlarge dented-2 dented-3 dented-4 dented-5 dented-6 hidden" type="checkbox" name="attr_armor_dented" value="6"/>
                 </div>
               </div>
             </div>
@@ -235,12 +228,6 @@
                 <!-- This first input is "checkbox", but hidden by CSS-->
                 <!-- It lets you uncheck the whole slider by being "checked" at 0-->
                 <!-- CSS magic requires that the empty boxes come after the checked box-->
-                <input class="checkbox-large" type="checkbox" name="attr_resilience" value="0" checked="checked"/>
-                <input class="checkbox-large resilience-2 hidden" type="checkbox" name="attr_resilience" value="1"/>
-                <input class="checkbox-large resilience-2 resilience-4 hidden" type="checkbox" name="attr_resilience" value="2"/>
-                <input class="checkbox-large resilience-2 resilience-4 resilience-6 hidden" type="checkbox" name="attr_resilience" value="3"/>
-                <input class="checkbox-large resilience-2 resilience-4 resilience-6 resilience-8 hidden" type="checkbox" name="attr_resilience" value="4"/>
-                <input class="checkbox-large resilience-2 resilience-4 resilience-6 resilience-8 resilience-10 hidden" type="checkbox" name="attr_resilience" value="5"/>
               </div>
             </div>
           </div>
@@ -261,33 +248,43 @@
               </div>
             </div>
             <div>
-              <div class="inline center x1">
+              <div class="inline center">
                 <div class="slider nowrap">
                   <!-- This first input is "checkbox", but hidden by CSS-->
                   <!-- It lets you uncheck the whole slider by being "checked" at 0-->
                   <!-- CSS magic requires that the empty boxes come after the checked box-->
-                  <input class="checkbox-large" type="checkbox" name="attr_bruises_x1" value="0" checked="checked"/>
-                  <input class="checkbox-large " type="checkbox" name="attr_bruises_x1" value="1"/>
-                  <input class="checkbox-large " type="checkbox" name="attr_bruises_x1" value="2"/>
-                  <input class="checkbox-large " type="checkbox" name="attr_bruises_x1" value="3"/>
-                  <input class="checkbox-large " type="checkbox" name="attr_bruises_x1" value="4"/>
-                  <input class="checkbox-large " type="checkbox" name="attr_bruises_x1" value="5"/>
-                  <input class="checkbox-large " type="checkbox" name="attr_bruises_x1" value="6"/>
-                  <input class="checkbox-large toughness-4" type="checkbox" name="attr_bruises_x1" value="7"/>
-                  <input class="checkbox-large toughness-4" type="checkbox" name="attr_bruises_x1" value="8"/>
+                  <input class="grey-control" type="checkbox" hidden="hidden" name="attr_bruises_max" value="1"/>
+                  <input class="display-box active-box checkbox-large " type="checkbox" name="attr_bruises" value="1"/>
+                  <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_bruises" value="1"/>
+                  <input class="grey-control" type="checkbox" hidden="hidden" name="attr_bruises_max" value="2" checked="checked"/>
+                  <input class="display-box active-box checkbox-large " type="checkbox" name="attr_bruises" value="2"/>
+                  <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_bruises" value="2"/>
+                  <input class="grey-control" type="checkbox" hidden="hidden" name="attr_bruises_max" value="3"/>
+                  <input class="display-box active-box checkbox-large " type="checkbox" name="attr_bruises" value="3"/>
+                  <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_bruises" value="3"/>
                 </div>
-              </div><br/>
-              <div class="inline center x2">
-                <div class="slider nowrap">
-                  <!-- This first input is "checkbox", but hidden by CSS-->
-                  <!-- It lets you uncheck the whole slider by being "checked" at 0-->
-                  <!-- CSS magic requires that the empty boxes come after the checked box-->
-                  <input class="checkbox-large" type="checkbox" name="attr_bruises_x2" value="0" checked="checked"/>
-                  <input class="checkbox-large " type="checkbox" name="attr_bruises_x2" value="1"/>
-                  <input class="checkbox-large " type="checkbox" name="attr_bruises_x2" value="2"/>
-                  <input class="checkbox-large " type="checkbox" name="attr_bruises_x2" value="3"/>
-                  <input class="checkbox-large " type="checkbox" name="attr_bruises_x2" value="4"/>
-                  <input class="checkbox-large toughness-5" type="checkbox" name="attr_bruises_x2" value="5"/>
+              </div>
+            </div>
+          </div>
+          <div class="scrapes">
+            <h3 data-i18n="scrapes"></h3>
+            <div class="inline">
+              <div class="column">
+                <div class="inline center">
+                  <div class="slider nowrap">
+                    <!-- This first input is "checkbox", but hidden by CSS-->
+                    <!-- It lets you uncheck the whole slider by being "checked" at 0-->
+                    <!-- CSS magic requires that the empty boxes come after the checked box-->
+                    <input class="grey-control" type="checkbox" hidden="hidden" name="attr_scrapes_max" value="1"/>
+                    <input class="display-box active-box checkbox-large " type="checkbox" name="attr_scrapes" value="1"/>
+                    <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_scrapes" value="1"/>
+                    <input class="grey-control" type="checkbox" hidden="hidden" name="attr_scrapes_max" value="2" checked="checked"/>
+                    <input class="display-box active-box checkbox-large " type="checkbox" name="attr_scrapes" value="2"/>
+                    <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_scrapes" value="2"/>
+                    <input class="grey-control" type="checkbox" hidden="hidden" name="attr_scrapes_max" value="3"/>
+                    <input class="display-box active-box checkbox-large " type="checkbox" name="attr_scrapes" value="3"/>
+                    <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_scrapes" value="3"/>
+                  </div>
                 </div>
               </div>
             </div>
@@ -301,14 +298,17 @@
                     <!-- This first input is "checkbox", but hidden by CSS-->
                     <!-- It lets you uncheck the whole slider by being "checked" at 0-->
                     <!-- CSS magic requires that the empty boxes come after the checked box-->
-                    <input class="checkbox-large" type="checkbox" name="attr_wounds_x3" value="0" checked="checked"/>
-                    <input class="checkbox-large " type="checkbox" name="attr_wounds_x3" value="1"/>
-                    <input class="checkbox-large " type="checkbox" name="attr_wounds_x3" value="2"/>
-                    <input class="checkbox-large " type="checkbox" name="attr_wounds_x3" value="3"/>
-                    <input class="checkbox-large " type="checkbox" name="attr_wounds_x3" value="4"/>
+                    <input class="grey-control" type="checkbox" hidden="hidden" name="attr_wounds_max" value="1" checked="checked"/>
+                    <input class="display-box active-box checkbox-large " type="checkbox" name="attr_wounds" value="1"/>
+                    <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_wounds" value="1"/>
+                    <input class="grey-control" type="checkbox" hidden="hidden" name="attr_wounds_max" value="2"/>
+                    <input class="display-box active-box checkbox-large " type="checkbox" name="attr_wounds" value="2"/>
+                    <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_wounds" value="2"/>
+                    <input class="grey-control" type="checkbox" hidden="hidden" name="attr_wounds_max" value="3"/>
+                    <input class="display-box active-box checkbox-large " type="checkbox" name="attr_wounds" value="3"/>
+                    <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_wounds" value="3"/>
                   </div>
                 </div>
-                <p class="center">Injury</p>
               </div>
               <div class="column">
                 <div class="inline center x6">
@@ -316,12 +316,17 @@
                     <!-- This first input is "checkbox", but hidden by CSS-->
                     <!-- It lets you uncheck the whole slider by being "checked" at 0-->
                     <!-- CSS magic requires that the empty boxes come after the checked box-->
-                    <input class="checkbox-large" type="checkbox" name="attr_wounds_x6" value="0" checked="checked"/>
-                    <input class="checkbox-large " type="checkbox" name="attr_wounds_x6" value="1"/>
-                    <input class="checkbox-large " type="checkbox" name="attr_wounds_x6" value="2"/>
+                    <input class="grey-control" type="checkbox" hidden="hidden" name="attr_injuries_max" value="1" checked="checked"/>
+                    <input class="display-box active-box checkbox-large " type="checkbox" name="attr_injuries" value="1"/>
+                    <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_injuries" value="1"/>
+                    <input class="grey-control" type="checkbox" hidden="hidden" name="attr_injuries_max" value="2"/>
+                    <input class="display-box active-box checkbox-large " type="checkbox" name="attr_injuries" value="2"/>
+                    <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_injuries" value="2"/>
+                    <input class="grey-control" type="checkbox" hidden="hidden" name="attr_injuries_max" value="3"/>
+                    <input class="display-box active-box checkbox-large " type="checkbox" name="attr_injuries" value="3"/>
+                    <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_injuries" value="3"/>
                   </div>
                 </div>
-                <p class="center">Injury</p>
               </div>
             </div>
           </div>
@@ -368,23 +373,43 @@
           </div>
           <div class="madness">
             <h3 class="center" data-i18n="MADNESS">MADNESS</h3>
-            <div class="inline center x1">
+            <div class="inline center">
               <div class="slider nowrap">
                 <!-- This first input is "checkbox", but hidden by CSS-->
                 <!-- It lets you uncheck the whole slider by being "checked" at 0-->
                 <!-- CSS magic requires that the empty boxes come after the checked box-->
-                <input class="checkbox-large" type="checkbox" name="attr_madness_x1" value="0" checked="checked"/>
-                <input class="checkbox-large " type="checkbox" name="attr_madness_x1" value="1"/>
-                <input class="checkbox-large " type="checkbox" name="attr_madness_x1" value="2"/>
-                <input class="checkbox-large " type="checkbox" name="attr_madness_x1" value="3"/>
-                <input class="checkbox-large " type="checkbox" name="attr_madness_x1" value="4"/>
-                <input class="checkbox-large " type="checkbox" name="attr_madness_x1" value="5"/>
-                <input class="checkbox-large " type="checkbox" name="attr_madness_x1" value="6"/>
-                <input class="checkbox-large insight-4" type="checkbox" name="attr_madness_x1" value="7"/>
-                <input class="checkbox-large insight-5" type="checkbox" name="attr_madness_x1" value="8"/>
+                <input class="grey-control" type="checkbox" hidden="hidden" name="attr_madness_x1_max" value="1"/>
+                <input class="display-box active-box checkbox-large " type="checkbox" name="attr_madness_x1" value="1"/>
+                <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_madness_x1" value="1"/>
+                <input class="grey-control" type="checkbox" hidden="hidden" name="attr_madness_x1_max" value="2"/>
+                <input class="display-box active-box checkbox-large " type="checkbox" name="attr_madness_x1" value="2"/>
+                <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_madness_x1" value="2"/>
+                <input class="grey-control" type="checkbox" hidden="hidden" name="attr_madness_x1_max" value="3"/>
+                <input class="display-box active-box checkbox-large " type="checkbox" name="attr_madness_x1" value="3"/>
+                <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_madness_x1" value="3"/>
+                <input class="grey-control" type="checkbox" hidden="hidden" name="attr_madness_x1_max" value="4"/>
+                <input class="display-box active-box checkbox-large " type="checkbox" name="attr_madness_x1" value="4"/>
+                <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_madness_x1" value="4"/>
+                <input class="grey-control" type="checkbox" hidden="hidden" name="attr_madness_x1_max" value="5"/>
+                <input class="display-box active-box checkbox-large " type="checkbox" name="attr_madness_x1" value="5"/>
+                <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_madness_x1" value="5"/>
+                <input class="grey-control" type="checkbox" hidden="hidden" name="attr_madness_x1_max" value="6" checked="checked"/>
+                <input class="display-box active-box checkbox-large " type="checkbox" name="attr_madness_x1" value="6"/>
+                <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_madness_x1" value="6"/>
+                <input class="grey-control" type="checkbox" hidden="hidden" name="attr_madness_x1_max" value="7"/>
+                <input class="display-box active-box checkbox-large " type="checkbox" name="attr_madness_x1" value="7"/>
+                <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_madness_x1" value="7"/>
+                <input class="grey-control" type="checkbox" hidden="hidden" name="attr_madness_x1_max" value="8"/>
+                <input class="display-box active-box checkbox-large " type="checkbox" name="attr_madness_x1" value="8"/>
+                <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_madness_x1" value="8"/>
+                <input class="grey-control" type="checkbox" hidden="hidden" name="attr_madness_x1_max" value="9"/>
+                <input class="display-box active-box checkbox-large " type="checkbox" name="attr_madness_x1" value="9"/>
+                <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_madness_x1" value="9"/>
+                <input class="grey-control" type="checkbox" hidden="hidden" name="attr_madness_x1_max" value="10"/>
+                <input class="display-box active-box checkbox-large " type="checkbox" name="attr_madness_x1" value="10"/>
+                <input class="display-box disable-box checkbox-large " type="checkbox" tabindex="-1" name="attr_madness_x1" value="10"/>
               </div>
             </div>
-            <p class="center">Trauma</p>
           </div>
         </div>
       </div>
@@ -746,12 +771,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_unarmed" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_unarmed" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_unarmed" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_unarmed" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_unarmed" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_unarmed" value="5"/>
           </div>
         </div>
         <div class="inline justify">
@@ -762,12 +781,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_grappling" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_grappling" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_grappling" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_grappling" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_grappling" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_grappling" value="5"/>
           </div>
         </div>
         <div class="inline justify">
@@ -778,12 +791,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_daggers" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_daggers" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_daggers" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_daggers" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_daggers" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_daggers" value="5"/>
           </div>
         </div>
         <div class="inline justify">
@@ -794,12 +801,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_swords" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_swords" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_swords" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_swords" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_swords" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_swords" value="5"/>
           </div>
         </div>
         <div class="inline justify">
@@ -810,12 +811,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_axes" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_axes" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_axes" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_axes" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_axes" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_axes" value="5"/>
           </div>
         </div>
         <div class="inline justify">
@@ -826,12 +821,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_bludgeons" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_bludgeons" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_bludgeons" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_bludgeons" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_bludgeons" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_bludgeons" value="5"/>
           </div>
         </div>
         <div class="inline justify">
@@ -842,12 +831,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_polearms" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_polearms" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_polearms" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_polearms" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_polearms" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_polearms" value="5"/>
           </div>
         </div>
         <div class="inline justify">
@@ -858,12 +841,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_esoteric" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_esoteric" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_esoteric" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_esoteric" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_esoteric" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_esoteric" value="5"/>
           </div>
         </div>
         <div class="inline justify">
@@ -874,12 +851,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_bows" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_bows" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_bows" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_bows" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_bows" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_bows" value="5"/>
           </div>
         </div>
         <div class="inline justify">
@@ -890,12 +861,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_throwing" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_throwing" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_throwing" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_throwing" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_throwing" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_throwing" value="5"/>
           </div>
         </div>
         <div class="inline justify">
@@ -906,12 +871,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_shields" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_shields" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_shields" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_shields" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_shields" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_shields" value="5"/>
           </div>
         </div>
       </div>
@@ -994,210 +953,185 @@
           </div>
         </div>
         <h2 class="strike"><span data-i18n="ABILITIES">ABILITIES</span></h2>
-        <div class="ability-scores">
-          <div class="inline">
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="STRENGTH"></h4><span>
-                <input name="attr_strength" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+        <div class="skill-container">
+          <div class="skill-block">
+            <div class="rough-container flex-box">
+              <h3 class="rough-header" data-i18n="strength"></h3>
+              <div class="rough-input-container">
+                <input class="rough-input" type="number" name="attr_strength"/>
+              </div>
             </div>
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="INTELLECT"></h4><span>
-                <input name="attr_intellect" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="athletics"></h4>
+              <input class="underline" type="number" name="attr_athletics"/>
             </div>
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="HEART"></h4><span>
-                <input name="attr_heart" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="heavy attack"></h4>
+              <input class="underline" type="number" name="attr_heavy_attack"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="unarmed attack"></h4>
+              <input class="underline" type="number" name="attr_unarmed_attack"/>
             </div>
           </div>
-          <div class="inline">
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="DEXTERITY"></h4><span>
-                <input name="attr_dexterity" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+          <div class="skill-block">
+            <div class="rough-container flex-box">
+              <h3 class="rough-header" data-i18n="dexterity"></h3>
+              <div class="rough-input-container">
+                <input class="rough-input" type="number" name="attr_dexterity"/>
+              </div>
             </div>
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="WISDOM"></h4><span>
-                <input name="attr_wisdom" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="locks &amp; traps"></h4>
+              <input class="underline" type="number" name="attr_locks_&amp;_traps"/>
             </div>
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="MYSTIQUE"></h4><span>
-                <input name="attr_mystique" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="ranged attack"></h4>
+              <input class="underline" type="number" name="attr_ranged_attack"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="sleight of hand"></h4>
+              <input class="underline" type="number" name="attr_sleight_of_hand"/>
             </div>
           </div>
-          <div class="inline">
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="TOUGHNESS"></h4><span>
-                <input name="attr_toughness" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+          <div class="skill-block">
+            <div class="rough-container flex-box">
+              <h3 class="rough-header" data-i18n="agility"></h3>
+              <div class="rough-input-container">
+                <input class="rough-input" type="number" name="attr_agility"/>
+              </div>
             </div>
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="LORE"></h4><span>
-                <input name="attr_lore" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="acrobatics"></h4>
+              <input class="underline" type="number" name="attr_acrobatics"/>
             </div>
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="COURAGE"></h4><span>
-                <input name="attr_courage" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="finesse attack"></h4>
+              <input class="underline" type="number" name="attr_finesse_attack"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="stealth"></h4>
+              <input class="underline" type="number" name="attr_stealth"/>
             </div>
           </div>
-          <div class="inline">
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="REFLEX"></h4><span>
-                <input name="attr_reflex" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+          <div class="skill-block">
+            <div class="rough-container flex-box">
+              <h3 class="rough-header" data-i18n="awareness"></h3>
+              <div class="rough-input-container">
+                <input class="rough-input" type="number" name="attr_awareness"/>
+              </div>
             </div>
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="AWARENESS"></h4><span>
-                <input name="attr_awareness" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="navigation"></h4>
+              <input class="underline" type="number" name="attr_navigation"/>
             </div>
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="INSIGHT"></h4><span>
-                <input name="attr_insight" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="perception"></h4>
+              <input class="underline" type="number" name="attr_perception"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="tracking"></h4>
+              <input class="underline" type="number" name="attr_tracking"/>
             </div>
           </div>
-          <div class="inline">
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="STEALTH"></h4><span>
-                <input name="attr_stealth" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+          <div class="skill-block">
+            <div class="rough-container flex-box">
+              <h3 class="rough-header" data-i18n="intellect"></h3>
+              <div class="rough-input-container">
+                <input class="rough-input" type="number" name="attr_intellect"/>
+              </div>
             </div>
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="FOCUS"></h4><span>
-                <input name="attr_focus" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="investigation"></h4>
+              <input class="underline" type="number" name="attr_investigation"/>
             </div>
-            <div class="center dice-dropdown">
-              <h4 class="uppercase" data-i18n="WILLPOWER"></h4><span>
-                <input name="attr_willpower" value="0" type="number"/></span>
-              <!--
-              span.selectspan
-              select(name=`attr_ability_${name}`)
-                  option(value="d4") d4
-                  option(value="d6") d6
-                  option(value="d8") d8
-                  option(value="d10") d10
-              
-              -->
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="reason &amp; logic"></h4>
+              <input class="underline" type="number" name="attr_reason_&amp;_logic"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="study &amp; write"></h4>
+              <input class="underline" type="number" name="attr_study_&amp;_write"/>
+            </div>
+          </div>
+          <div class="skill-block">
+            <div class="rough-container flex-box">
+              <h3 class="rough-header" data-i18n="wisdom"></h3>
+              <div class="rough-input-container">
+                <input class="rough-input" type="number" name="attr_wisdom"/>
+              </div>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="animal ken"></h4>
+              <input class="underline" type="number" name="attr_animal_ken"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="healing"></h4>
+              <input class="underline" type="number" name="attr_healing"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="survival"></h4>
+              <input class="underline" type="number" name="attr_survival"/>
+            </div>
+          </div>
+          <div class="skill-block">
+            <div class="rough-container flex-box">
+              <h3 class="rough-header" data-i18n="heart"></h3>
+              <div class="rough-input-container">
+                <input class="rough-input" type="number" name="attr_heart"/>
+              </div>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="empathy"></h4>
+              <input class="underline" type="number" name="attr_empathy"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="insight"></h4>
+              <input class="underline" type="number" name="attr_insight"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="persuasion"></h4>
+              <input class="underline" type="number" name="attr_persuasion"/>
+            </div>
+          </div>
+          <div class="skill-block">
+            <div class="rough-container flex-box">
+              <h3 class="rough-header" data-i18n="mystique"></h3>
+              <div class="rough-input-container">
+                <input class="rough-input" type="number" name="attr_mystique"/>
+              </div>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="charm"></h4>
+              <input class="underline" type="number" name="attr_charm"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="deception"></h4>
+              <input class="underline" type="number" name="attr_deception"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="performance"></h4>
+              <input class="underline" type="number" name="attr_performance"/>
+            </div>
+          </div>
+          <div class="skill-block">
+            <div class="rough-container flex-box">
+              <h3 class="rough-header" data-i18n="presence"></h3>
+              <div class="rough-input-container">
+                <input class="rough-input" type="number" name="attr_presence"/>
+              </div>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="connect"></h4>
+              <input class="underline" type="number" name="attr_connect"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="intimidation"></h4>
+              <input class="underline" type="number" name="attr_intimidation"/>
+            </div>
+            <div class="flex-box justify-space-between">
+              <h4 data-i18n="leadership"></h4>
+              <input class="underline" type="number" name="attr_leadership"/>
             </div>
           </div>
         </div>
@@ -1214,12 +1148,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_advskill_0_value" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_0_value" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_0_value" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_0_value" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_0_value" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_0_value" value="5"/>
           </div>
         </div>
         <div class="text-input noline placeholder-line">
@@ -1231,12 +1159,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_advskill_1_value" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_1_value" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_1_value" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_1_value" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_1_value" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_1_value" value="5"/>
           </div>
         </div>
         <div class="text-input noline placeholder-line">
@@ -1248,12 +1170,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_advskill_2_value" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_2_value" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_2_value" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_2_value" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_2_value" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_2_value" value="5"/>
           </div>
         </div>
         <div class="text-input noline placeholder-line">
@@ -1265,12 +1181,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_advskill_3_value" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_3_value" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_3_value" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_3_value" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_3_value" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_3_value" value="5"/>
           </div>
         </div>
         <div class="text-input noline placeholder-line">
@@ -1282,12 +1192,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_advskill_4_value" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_4_value" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_4_value" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_4_value" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_4_value" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_4_value" value="5"/>
           </div>
         </div>
         <div class="text-input noline placeholder-line">
@@ -1299,12 +1203,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_advskill_5_value" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_5_value" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_5_value" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_5_value" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_5_value" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_5_value" value="5"/>
           </div>
         </div>
         <div class="text-input noline placeholder-line">
@@ -1316,12 +1214,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_advskill_6_value" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_6_value" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_6_value" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_6_value" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_6_value" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_6_value" value="5"/>
           </div>
         </div>
         <div class="text-input noline placeholder-line">
@@ -1333,12 +1225,6 @@
             <!-- This first input is "checkbox", but hidden by CSS-->
             <!-- It lets you uncheck the whole slider by being "checked" at 0-->
             <!-- CSS magic requires that the empty boxes come after the checked box-->
-            <input class="checkbox-normal" type="checkbox" name="attr_skill_advskill_7_value" value="0" checked="checked"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_7_value" value="1"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_7_value" value="2"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_7_value" value="3"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_7_value" value="4"/>
-            <input class="checkbox-normal " type="checkbox" name="attr_skill_advskill_7_value" value="5"/>
           </div>
         </div>
       </div>
